@@ -73,7 +73,7 @@ endif
 BOX_VERSION ?= $(shell cat VERSION)
 UPDATE ?= false
 GENERALIZE ?= false
-HEADLESS ?= false
+HEADLESS ?= true
 ifndef SHUTDOWN_COMMAND
 ifeq ($(GENERALIZE),true)
 	SHUTDOWN_COMMAND ?= C:/Windows/System32/Sysprep/sysprep.exe /generalize /shutdown /oobe /unattend:A:/Autounattend.xml
